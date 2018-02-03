@@ -1,5 +1,4 @@
 SetLogLevel <- function(level="INFO") {
-    stopifnot(level %in% c("INFO", "WARN", "STOP"))
     assign("loglevel", level, envir=.rloggingOptions)
 }
 
